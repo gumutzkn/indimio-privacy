@@ -2,28 +2,170 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <title>İndimio Gizlilik Politikası</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İndimio – Gizlilik Politikası</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: #f8fafc;
+        color: #1f2937;
+        line-height: 1.7;
+      }
+
+      header {
+        background: linear-gradient(135deg, #208AEF 0%, #1a6fd4 100%);
+        color: white;
+        padding: 48px 24px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+      }
+
+      header p {
+        margin-top: 8px;
+        opacity: 0.85;
+        font-size: 0.95rem;
+      }
+
+      .container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 48px 24px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 16px;
+        padding: 32px;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        border: 1px solid #e5e7eb;
+      }
+
+      .card h2 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #208AEF;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .card h2::before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 18px;
+        background: #208AEF;
+        border-radius: 2px;
+      }
+
+      .card p, .card li {
+        color: #4b5563;
+        font-size: 0.95rem;
+      }
+
+      .card ul {
+        padding-left: 20px;
+        margin-top: 8px;
+      }
+
+      .card ul li {
+        margin-bottom: 6px;
+      }
+
+      .highlight {
+        background: #f0f9ff;
+        border-left: 4px solid #208AEF;
+        padding: 14px 18px;
+        border-radius: 6px;
+        margin-top: 12px;
+        font-size: 0.95rem;
+        color: #1e40af;
+      }
+
+      footer {
+        text-align: center;
+        padding: 32px 24px;
+        color: #9ca3af;
+        font-size: 0.85rem;
+        border-top: 1px solid #e5e7eb;
+      }
+
+      footer a {
+        color: #208AEF;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      a { color: #208AEF; }
+    </style>
   </head>
   <body>
-    <h1>Gizlilik Politikası</h1>
-    <p>Son güncelleme: Nisan 2026</p>
 
-    <h2>Topladığımız Veriler</h2>
-    <p>
-      Ad, e-posta adresi, şifre (şifrelenmiş olarak saklanır, düz metin olarak
-      tutulmaz) ve push bildirim token'ı.
-    </p>
+    <header>
+      <h1>🔒 Gizlilik Politikası</h1>
+      <p>Son güncelleme: Nisan 2026</p>
+    </header>
 
-    <h2>Verilerin Kullanımı</h2>
-    <p>
-      Veriler yalnızca watchlist bildirimlerini göndermek için kullanılır.
-      Üçüncü taraflarla paylaşılmaz.
-    </p>
+    <div class="container">
 
-    <h2>Veri Silme</h2>
-    <p>Hesabınızı silmek için destek@indimio.shop adresine e-posta gönderin.</p>
+      <div class="card">
+        <h2>Topladığımız Veriler</h2>
+        <p>Uygulamayı kullanırken aşağıdaki veriler toplanır:</p>
+        <ul>
+          <li>Ad ve e-posta adresi</li>
+          <li>Şifre (şifrelenmiş olarak saklanır, düz metin tutulmaz)</li>
+          <li>Push bildirim token'ı (bildirim izni verildiyse)</li>
+          <li>Takip listesi içerikleri</li>
+        </ul>
+      </div>
 
-    <h2>İletişim</h2>
-    <p>destek@indimio.shop</p>
+      <div class="card">
+        <h2>Verilerin Kullanımı</h2>
+        <p>Toplanan veriler yalnızca şu amaçlarla kullanılır:</p>
+        <ul>
+          <li>Hesap oluşturma ve kimlik doğrulama</li>
+          <li>Takip listenizdeki ürünler için fiyat bildirimleri gönderme</li>
+          <li>Uygulama işlevselliğinin sağlanması</li>
+        </ul>
+        <div class="highlight">
+          Verileriniz hiçbir koşulda üçüncü taraflarla paylaşılmaz veya satılmaz.
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Veri Güvenliği</h2>
+        <p>Tüm veriler şifrelenmiş bağlantılar (HTTPS) üzerinden iletilir. Şifreler güvenli algoritmalarla hashlenerek saklanır, düz metin olarak tutulmaz.</p>
+      </div>
+
+      <div class="card">
+        <h2>Hesap ve Veri Silme</h2>
+        <p>Hesabınızı ve tüm verilerinizi silmek için:</p>
+        <div class="highlight">
+          📧 <a href="mailto:destek@indimio.shop">destek@indimio.shop</a> adresine e-posta gönderin veya <a href="./delete-account">hesap silme sayfasını</a> ziyaret edin.
+        </div>
+        <p style="margin-top: 12px;">Talepler en geç 7 iş günü içinde işleme alınır.</p>
+      </div>
+
+      <div class="card">
+        <h2>İletişim</h2>
+        <p>Gizlilik politikamıza ilişkin sorularınız için:<br />
+        <a href="mailto:destek@indimio.shop">destek@indimio.shop</a></p>
+      </div>
+
+    </div>
+
+    <footer>
+      © 2026 İndimio &nbsp;·&nbsp; <a href="./delete-account">Hesap Silme</a>
+    </footer>
+
   </body>
 </html>
